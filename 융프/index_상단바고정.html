@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+    body{
+        font-family: 'Noto Sans KR', sans-serif;
+        margin: 0;
+        height: 2000px;
+    }
+    section{
+        width: 100%;
+        height: 100vh;
+    }
+    section:nth-child(even){
+        background-color: #202020;
+    }
+    #New_song{
+        height: 1000px;
+    }
+    #about {
+        height: 500px;
+    }
+    #pet{
+        height: 1400px;
+    }
+    .wrapper{
+        padding-top: 88px;
+        max-width: 1200px;
+        margin: auto;
+    }
+    h1{
+        color: #7d7d7d;
+        font-size: 50px;
+        text-align: center;
+    }
+    h2{
+        font-size: 28px;
+        text-align: center;
+    }
+    h3{
+        font-size: 22px;
+        font-weight: 300;
+        text-align: center;
+    }
+    .w_text{
+        color: #e9e9e9;
+    }
+    .b_text{
+        color: #202020;
+    }
+    img{
+        display: block;
+        margin: auto;
+    }
+    .btns{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 10;
+        margin-top: 0;
+    }
+    .btns .container{
+        position: relative;
+        max-width: 1000px;
+        padding: 10px;
+        background-color: transparent;
+        transition: .3s;
+        margin: auto;
+        border-radius: 0 0 50px 50px;
+    }
+    .btns .container.show{
+        background-color: #7d7d7d;
+    }
+    /* .back{
+        position: relative;
+        max-width: 1000px;
+        background-color: grey;
+        margin: auto;
+        height: 50px;
+        margin-top: -50px;
+        opacity: 0;
+        transition: .3s;
+    } */
+    .back.show{
+        opacity: 1;
+    }
+    .btns_menu{
+        display: flex;
+        justify-content: center;
+    }
+    .btns_menu .btn{
+        font-size: 16px;
+        font-weight: 700;
+        color: #202020;
+        width: 150px;
+        height: 40px;
+        border-radius: 6px;
+        margin: 4px;
+        cursor: pointer;
+        background-color: #e9e9e9;
+    }
+    .btns_menu .btn:hover{
+        background-color: white;
+        border: 1px solid #e9e9e9;
+    }
+    button{
+        background-color: transparent;
+        cursor: pointer;
+        border: none;
+        outline: none;
+    }
+    .arrow-up{
+        position: fixed;
+        bottom: 60px;
+        right: 50px;
+        width: 70px;
+        height: 70px;
+        color: #202020;
+        background-color: #e9e9e9;
+        border-radius: 50%;
+        opacity: 0;
+        transition: .3s;
+    }
+    .arrow-up span{
+        font-size: 40px;
+        /* background-color: red; */
+    }
+    .arrow-up.show{
+        opacity: 1;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="btns">
+        <div class="container">
+            <div class="btns_menu">
+                <button class="btn New_song">New song</button>
+                <button class="btn about">About</button>
+                <button class="btn skills">Skills</button>
+                <button class="btn works">Works</button>
+                <button class="btn pet">Pet</button>
+            </div>
+        </div>
+    </div>
+    <section id="New_song">
+        <div class="wrapper">
+            <h1>New song</h1>
+            <h2 class="w_text">KISS ME (feat. BIG Naughty)</h2>
+            <h3 class="w_text">2023년 4월 5일 발매
+                <br>
+                'Cant't take my eyes off you'를 샘플링한 곡이다.
+            </h3>
+            <img src="앨범 커버.jpg" alt="">
+        </div>
+    </section>
+    <section id="about">
+        <div class="wrapper">
+            <h1>About</h1>
+            <h2 class="b_text">Lorem ipsum dolor sit amet.</h2>
+            <h3 class="b_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, quod ab repudiandae explicabo eius, fugiat hic quis culpa officia qui facere sit, earum doloremque veritatis voluptatum ullam est minus illo\</h3>
+        </div>
+    </section>
+    <section id="skills">
+        <div class="wrapper">
+            <h1>Skills</h1>
+            <h2 class="w_text">Lorem ipsum dolor sit amet.</h2>
+            <h3 class="w_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, quod ab repudiandae explicabo eius, fugiat hic quis culpa officia qui facere sit, earum doloremque veritatis voluptatum ullam est minus illo\</h3>
+        </div>
+    </section>
+    <section id="works">
+        <div class="wrapper">
+            <h1>Works</h1>
+            <h2 class="b_text">Lorem ipsum dolor sit amet.</h2>
+            <h3 class="b_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, quod ab repudiandae explicabo eius, fugiat hic quis culpa officia qui facere sit, earum doloremque veritatis voluptatum ullam est minus illo\</h3>
+        </div>
+    </section>
+    <section id="pet">
+        <div class="wrapper">
+            <h1>Pet</h1>
+            <h2 class="w_text">돌돌이</h2>
+            <h3 class="w_text">정말 귀엽다..</h3>
+            <img src="돌돌이.jpg" alt="">
+        </div>
+    </section>
+
+    <button class="arrow-up">
+    <span class="material-symbols-outlined">
+        arrow_upward
+        </span>
+    </button>
+
+    <script>
+        const btnNew_song = document.querySelector('.New_song');
+        const sectionNew_song = document.querySelector('#New_song');
+        btnNew_song.addEventListener('click', function () {
+            sectionNew_song.scrollIntoView({behavior:"smooth", block:"start"}) 
+        })
+        const btnAbout = document.querySelector('.about');
+        const sectionAbout = document.querySelector('#about');
+        btnAbout.addEventListener('click', function () {
+            sectionAbout.scrollIntoView({behavior:"smooth", block:"start"}) 
+        })
+        const btnSkills = document.querySelector('.skills');
+        const sectionSkills = document.querySelector('#skills');
+        btnSkills.addEventListener('click', function () {
+            sectionSkills.scrollIntoView({behavior:"smooth", block:"start"}) 
+        })
+        const btnWorks = document.querySelector('.works');
+        const sectionWorks = document.querySelector('#works');
+        btnWorks.addEventListener('click', function () {
+            sectionWorks.scrollIntoView({behavior:"smooth", block:"start"}) 
+        })
+        const btnPet = document.querySelector('.pet');
+        const sectionPet = document.querySelector('#pet');
+        btnPet.addEventListener('click', function () {
+            sectionPet.scrollIntoView({behavior:"smooth", block:"start"}) 
+        })
+
+        const arrowUp = document.querySelector('.arrow-up')
+        document.addEventListener('scroll', function(){
+            // console.log(window.scrollY)
+            if(window.scrollY > 300) {
+                arrowUp.classList.add('show');
+            } else{
+                arrowUp.classList.remove('show');
+            }
+        })
+        arrowUp.addEventListener('click', function(){
+            sectionNew_song.scrollIntoView({behavior:"smooth", block:"center"})
+        })
+        const btnsBack = document.querySelector('.btns .container')
+        document.addEventListener('scroll', function(){
+            if (window.scrollY > 300) {
+                btnsBack.classList.add('show');
+            }else{
+                btnsBack.classList.remove('show');
+            }
+        })
+
+    </script>
+</body>
+</html>
